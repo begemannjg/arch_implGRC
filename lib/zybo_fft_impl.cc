@@ -30,7 +30,7 @@ namespace gr {
   namespace sdesign {
 
     zybo_fft::sptr
-    zybo_fft::make(gr_complex IQdata)
+    zybo_fft::make(float IQdata)
     {
       return gnuradio::get_initial_sptr
         (new zybo_fft_impl(IQdata));
@@ -41,7 +41,7 @@ namespace gr {
      */
     zybo_fft_impl::zybo_fft_impl(gr_complex IQdata)
       : gr::block("zybo_fft",
-              gr::io_signature::make(1, 1, sizeof(gr_complex)), //double input
+              gr::io_signature::make(1, 1, sizeof(float)), //double input
               gr::io_signature::make(1, 1, sizeof(gr_complex))) //double output
     {
 	   set_history(1); //look one sample ahead
@@ -68,22 +68,20 @@ namespace gr {
                        gr_vector_void_star &output_items)
     {
         const float *in = (const float *) input_items[0]; //double input for 64 bits
-        gr_complex *out = (gr_complex *) output_items[0]; //complex output for ffthw impl
+        float *out = (float *) output_items[0]; //complex output for ffthw impl
         const int num_pts=8192, direction=0, scale=1;
-         
+         int retval;
 
         // Do <+signal processing+>
         //FFT hardware mapping here
         
-  //      for(int i=0; i<noutput_items; i++)
-   //     {
-	//		out[0] = fft(&in, noutput, num_pts, direction, scale);
-	//	}
+	retval=fft(in, out, num_pts, direction, scale);
         
-        
-        
-        
-        
+       	if (retval==0)
+		printf("Sucessful");
+	else
+		printf("Not Valid");
+
         // Tell runtime system how many input items we consumed on
         // each input stream.
         consume_each (noutput_items);

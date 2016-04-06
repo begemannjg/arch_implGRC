@@ -29,10 +29,10 @@ namespace gr {
     class zybo_fft_impl : public zybo_fft
     {
      private:
-		gr_complex IQdata;//input data
+		float IQdata;//input data
 
      public:
-      zybo_fft_impl(gr_complex IQdata);
+      zybo_fft_impl(float IQdata);
       ~zybo_fft_impl();
       
 
