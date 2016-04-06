@@ -39,10 +39,10 @@ namespace gr {
     /*
      * The private constructor
      */
-    zybo_fft_impl::zybo_fft_impl(gr_complex IQdata)
+    zybo_fft_impl::zybo_fft_impl(float IQdata)
       : gr::block("zybo_fft",
               gr::io_signature::make(1, 1, sizeof(float)), //double input
-              gr::io_signature::make(1, 1, sizeof(gr_complex))) //double output
+              gr::io_signature::make(1, 1, sizeof(float))) //double output
     {
 	   set_history(1); //look one sample ahead
 	}
@@ -75,7 +75,7 @@ namespace gr {
         // Do <+signal processing+>
         //FFT hardware mapping here
         
-	retval=fft(in, out, num_pts, direction, scale);
+	retval=fft((float *)in, (float *)out, num_pts, direction, scale);
         
        	if (retval==0)
 		printf("Sucessful");

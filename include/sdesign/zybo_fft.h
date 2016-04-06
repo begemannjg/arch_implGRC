@@ -46,7 +46,7 @@ namespace gr {
        * class. sdesign::zybo_fft::make is the public interface for
        * creating new instances.
        */
-      static sptr make(gr_complex IQdata);
+      static sptr make(float IQdata);
     };
 
   } // namespace sdesign

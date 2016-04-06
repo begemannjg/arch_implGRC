@@ -41,10 +41,10 @@
         </param>
   <sink>
     <name>in</name>
-    <type>float,complex</type>
+    <type>float</type>
   </sink>
   <source>
     <name>out</name>
-    <type>float,complex</type>
+    <type>float</type>
   </source>
 </block>
