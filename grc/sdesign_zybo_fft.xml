@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<block>
+  <name>ZYNQ HW FFT</name>
+  <key>sdesign_zybo_fft</key>
+  <category>sdesign</category>
+  <import>import sdesign</import>
+  <make>sdesign.zybo_fft($IQdata)</make>
+  <param>
+                <name>Input Type</name>
+                <key>type</key>
+                <type>enum</type>
+                <option>
+                        <name>Complex</name>
+                        <key>complex</key>
+                        <opt>hide_shift:</opt>
+                </option>
+                <option>
+                        <name>Float</name>
+                        <key>float</key>
+                        <opt>hide_shift:all</opt>
+                </option>
+        </param>
+        <param>
+                <name>FFT Size</name>
+                <key>fft_size</key>
+                <value>8192</value>
+                <type>int</type>	
+        </param>
+        <param>
+                <name>Forward/Reverse</name>
+                <key>forward</key>
+                <type>enum</type>
+                <option>
+                        <name>Forward</name>
+                        <key>True</key>
+                </option>
+                <option>
+                        <name>Reverse</name>
+                        <key>False</key>
+                </option>	
+        </param>
+  <sink>
+    <name>in</name>
+    <type>float,complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float,complex</type>
+  </source>
+</block>

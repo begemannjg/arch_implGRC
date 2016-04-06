@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test-sdesign.dir/test_sdesign.cc.o CMakeFiles/test-sdesign.dir/qa_sdesign.cc.o  -o test-sdesign -rdynamic -lgnuradio-runtime -lgnuradio-pmt -lboost_filesystem -lboost_system -lcppunit -ldl libgnuradio-sdesign.so -lgnuradio-runtime -lgnuradio-pmt -lboost_filesystem -lboost_system -Wl,-rpath,/home/alarm/jbworkspace/gr-sdesign/build/lib 

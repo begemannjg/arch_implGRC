@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alarm/jbworkspace/gr-sdesign/lib/qa_sdesign.cc
+qa_sdesign.h
+/home/alarm/jbworkspace/gr-sdesign/lib/qa_sdesign.h
+
+/home/alarm/jbworkspace/gr-sdesign/lib/qa_sdesign.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/home/alarm/jbworkspace/gr-sdesign/lib/test_sdesign.cc
+config.h
+/home/alarm/jbworkspace/gr-sdesign/lib/config.h
+cppunit/TextTestRunner.h
+-
+cppunit/XmlOutputter.h
+-
+gnuradio/unittests.h
+-
+qa_sdesign.h
+/home/alarm/jbworkspace/gr-sdesign/lib/qa_sdesign.h
+iostream
+-
+fstream
+-
+
