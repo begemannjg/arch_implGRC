@@ -69,18 +69,17 @@ namespace gr {
     {
         const float *in = (const float *) input_items[0]; //double input for 64 bits
         float *out = (float *) output_items[0]; //complex output for ffthw impl
-        const int num_pts=8192, direction=0, scale=1;
+         int fft_size, direction=0, scale=1;
          int retval;
 
         // Do <+signal processing+>
         //FFT hardware mapping here
-        
-	retval=fft((float *)in, (float *)out, num_pts, direction, scale);
-        
+		retval=fft((float *)in, (float *)out, fft_size, direction, scale);
+        retval=2;//testing ret value
        	if (retval==0)
-		printf("Sucessful");
-	else
-		printf("Not Valid");
+			printf("Sucessful");
+		else
+			printf("Failure %d", retval);
 
         // Tell runtime system how many input items we consumed on
         // each input stream.

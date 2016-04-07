@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_128c3015cb690b3983b2ff90e0a6b24a" kind="dir">
+    <compoundname>sdesign</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="zybo__fft_8h">zybo_fft.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alarm/jbworkspace/gr-sdesign/include/sdesign/"/>
+  </compounddef>
+</doxygen>

@@ -6,17 +6,17 @@
   <import>import sdesign</import>
   <make>sdesign.zybo_fft()</make>
 		
-		<param>
+<!--		<param>
                 <name>IQdata</name>
 						<key>IQdata</key>
 						<value></value>
                         <type>float</type>
         </param>
-        
+        -->
         <param>
                 <name>FFT Size</name>
-                <key>fft_size</key>
-                <value>8192</value>
+                <key>$fft_size</key>
+                <value></value>
                 <type>int</type>	
         </param>
         
