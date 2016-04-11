@@ -136,7 +136,7 @@ lib/preinstall:
 lib/CMakeFiles/gnuradio-sdesign.dir/all:
 	$(MAKE) -f lib/CMakeFiles/gnuradio-sdesign.dir/build.make lib/CMakeFiles/gnuradio-sdesign.dir/depend
 	$(MAKE) -f lib/CMakeFiles/gnuradio-sdesign.dir/build.make lib/CMakeFiles/gnuradio-sdesign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=2,3 "Built target gnuradio-sdesign"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=8,9 "Built target gnuradio-sdesign"
 .PHONY : lib/CMakeFiles/gnuradio-sdesign.dir/all
 
 # Include target in all.
@@ -173,7 +173,7 @@ clean: lib/CMakeFiles/gnuradio-sdesign.dir/clean
 lib/CMakeFiles/test-sdesign.dir/all: lib/CMakeFiles/gnuradio-sdesign.dir/all
 	$(MAKE) -f lib/CMakeFiles/test-sdesign.dir/build.make lib/CMakeFiles/test-sdesign.dir/depend
 	$(MAKE) -f lib/CMakeFiles/test-sdesign.dir/build.make lib/CMakeFiles/test-sdesign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=6,7,8 "Built target test-sdesign"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=21,22,23 "Built target test-sdesign"
 .PHONY : lib/CMakeFiles/test-sdesign.dir/all
 
 # Include target in all.
@@ -207,12 +207,21 @@ clean: lib/CMakeFiles/test-sdesign.dir/clean
 # Directory level rules for directory swig
 
 # Convenience name for "all" pass in the directory.
-swig/all:
+swig/all: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all
+swig/all: swig/CMakeFiles/_sdesign_swig_swig_tag.dir/all
+swig/all: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/all
+swig/all: swig/CMakeFiles/_sdesign_swig.dir/all
+swig/all: swig/CMakeFiles/pygen_swig_36d03.dir/all
 
 .PHONY : swig/all
 
 # Convenience name for "clean" pass in the directory.
-swig/clean:
+swig/clean: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/clean
+swig/clean: swig/CMakeFiles/sdesign_swig_swig_doc.dir/clean
+swig/clean: swig/CMakeFiles/_sdesign_swig_swig_tag.dir/clean
+swig/clean: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/clean
+swig/clean: swig/CMakeFiles/_sdesign_swig.dir/clean
+swig/clean: swig/CMakeFiles/pygen_swig_36d03.dir/clean
 
 .PHONY : swig/clean
 
@@ -220,6 +229,225 @@ swig/clean:
 swig/preinstall:
 
 .PHONY : swig/preinstall
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/sdesign_swig_swig_2d0df.dir
+
+# All Build rule for target.
+swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all: swig/CMakeFiles/_sdesign_swig_swig_tag.dir/all
+swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/all
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/depend
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=14,15,16,17,18 "Built target sdesign_swig_swig_2d0df"
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/rule
+
+# Convenience name for target.
+sdesign_swig_swig_2d0df: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/rule
+
+.PHONY : sdesign_swig_swig_2d0df
+
+# clean rule for target.
+swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/clean
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/sdesign_swig_swig_doc.dir
+
+# All Build rule for target.
+swig/CMakeFiles/sdesign_swig_swig_doc.dir/all: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/all
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_doc.dir/build.make swig/CMakeFiles/sdesign_swig_swig_doc.dir/depend
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_doc.dir/build.make swig/CMakeFiles/sdesign_swig_swig_doc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=19,20 "Built target sdesign_swig_swig_doc"
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_doc.dir/all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/sdesign_swig_swig_doc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/sdesign_swig_swig_doc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_doc.dir/rule
+
+# Convenience name for target.
+sdesign_swig_swig_doc: swig/CMakeFiles/sdesign_swig_swig_doc.dir/rule
+
+.PHONY : sdesign_swig_swig_doc
+
+# clean rule for target.
+swig/CMakeFiles/sdesign_swig_swig_doc.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_doc.dir/build.make swig/CMakeFiles/sdesign_swig_swig_doc.dir/clean
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_doc.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/sdesign_swig_swig_doc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/_sdesign_swig_swig_tag.dir
+
+# All Build rule for target.
+swig/CMakeFiles/_sdesign_swig_swig_tag.dir/all: swig/CMakeFiles/sdesign_swig_swig_doc.dir/all
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/depend
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=5,6 "Built target _sdesign_swig_swig_tag"
+.PHONY : swig/CMakeFiles/_sdesign_swig_swig_tag.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/_sdesign_swig_swig_tag.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/_sdesign_swig_swig_tag.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_sdesign_swig_swig_tag.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/_sdesign_swig_swig_tag.dir/rule
+
+# Convenience name for target.
+_sdesign_swig_swig_tag: swig/CMakeFiles/_sdesign_swig_swig_tag.dir/rule
+
+.PHONY : _sdesign_swig_swig_tag
+
+# clean rule for target.
+swig/CMakeFiles/_sdesign_swig_swig_tag.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/clean
+.PHONY : swig/CMakeFiles/_sdesign_swig_swig_tag.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/_sdesign_swig_swig_tag.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/_sdesign_swig_doc_tag.dir
+
+# All Build rule for target.
+swig/CMakeFiles/_sdesign_swig_doc_tag.dir/all:
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/depend
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=3,4 "Built target _sdesign_swig_doc_tag"
+.PHONY : swig/CMakeFiles/_sdesign_swig_doc_tag.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/_sdesign_swig_doc_tag.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_sdesign_swig_doc_tag.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/_sdesign_swig_doc_tag.dir/rule
+
+# Convenience name for target.
+_sdesign_swig_doc_tag: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/rule
+
+.PHONY : _sdesign_swig_doc_tag
+
+# clean rule for target.
+swig/CMakeFiles/_sdesign_swig_doc_tag.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/clean
+.PHONY : swig/CMakeFiles/_sdesign_swig_doc_tag.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/_sdesign_swig.dir
+
+# All Build rule for target.
+swig/CMakeFiles/_sdesign_swig.dir/all: lib/CMakeFiles/gnuradio-sdesign.dir/all
+swig/CMakeFiles/_sdesign_swig.dir/all: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/depend
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=1,2 "Built target _sdesign_swig"
+.PHONY : swig/CMakeFiles/_sdesign_swig.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/_sdesign_swig.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/_sdesign_swig.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_sdesign_swig.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/_sdesign_swig.dir/rule
+
+# Convenience name for target.
+_sdesign_swig: swig/CMakeFiles/_sdesign_swig.dir/rule
+
+.PHONY : _sdesign_swig
+
+# clean rule for target.
+swig/CMakeFiles/_sdesign_swig.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/clean
+.PHONY : swig/CMakeFiles/_sdesign_swig.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/_sdesign_swig.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target swig/CMakeFiles/pygen_swig_36d03.dir
+
+# All Build rule for target.
+swig/CMakeFiles/pygen_swig_36d03.dir/all: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/all
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_36d03.dir/build.make swig/CMakeFiles/pygen_swig_36d03.dir/depend
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_36d03.dir/build.make swig/CMakeFiles/pygen_swig_36d03.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=12,13 "Built target pygen_swig_36d03"
+.PHONY : swig/CMakeFiles/pygen_swig_36d03.dir/all
+
+# Include target in all.
+all: swig/CMakeFiles/pygen_swig_36d03.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+swig/CMakeFiles/pygen_swig_36d03.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/pygen_swig_36d03.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles 0
+.PHONY : swig/CMakeFiles/pygen_swig_36d03.dir/rule
+
+# Convenience name for target.
+pygen_swig_36d03: swig/CMakeFiles/pygen_swig_36d03.dir/rule
+
+.PHONY : pygen_swig_36d03
+
+# clean rule for target.
+swig/CMakeFiles/pygen_swig_36d03.dir/clean:
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_36d03.dir/build.make swig/CMakeFiles/pygen_swig_36d03.dir/clean
+.PHONY : swig/CMakeFiles/pygen_swig_36d03.dir/clean
+
+# clean rule for target.
+clean: swig/CMakeFiles/pygen_swig_36d03.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory python
@@ -246,7 +474,7 @@ python/preinstall:
 python/CMakeFiles/pygen_python_e1eda.dir/all:
 	$(MAKE) -f python/CMakeFiles/pygen_python_e1eda.dir/build.make python/CMakeFiles/pygen_python_e1eda.dir/depend
 	$(MAKE) -f python/CMakeFiles/pygen_python_e1eda.dir/build.make python/CMakeFiles/pygen_python_e1eda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=4,5 "Built target pygen_python_e1eda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=10,11 "Built target pygen_python_e1eda"
 .PHONY : python/CMakeFiles/pygen_python_e1eda.dir/all
 
 # Include target in all.
@@ -392,7 +620,7 @@ docs/doxygen/preinstall:
 docs/doxygen/CMakeFiles/doxygen_target.dir/all:
 	$(MAKE) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/depend
 	$(MAKE) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=1 "Built target doxygen_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alarm/jbworkspace/gr-sdesign/build/CMakeFiles --progress-num=7 "Built target doxygen_target"
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/all
 
 # Include target in all.

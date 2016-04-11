@@ -78,16 +78,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
+# Special rule for the target test
+test/fast: test
 
-.PHONY : install/strip/fast
+.PHONY : test/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -100,6 +100,17 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -111,17 +122,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -165,6 +165,204 @@ depend:
 	cd /home/alarm/jbworkspace/gr-sdesign/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/rule:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/rule
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/rule
+
+# Convenience name for target.
+sdesign_swig_swig_2d0df: swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/rule
+
+.PHONY : sdesign_swig_swig_2d0df
+
+# fast build rule for target.
+sdesign_swig_swig_2d0df/fast:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build
+.PHONY : sdesign_swig_swig_2d0df/fast
+
+# Convenience name for target.
+swig/CMakeFiles/sdesign_swig_swig_doc.dir/rule:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/sdesign_swig_swig_doc.dir/rule
+.PHONY : swig/CMakeFiles/sdesign_swig_swig_doc.dir/rule
+
+# Convenience name for target.
+sdesign_swig_swig_doc: swig/CMakeFiles/sdesign_swig_swig_doc.dir/rule
+
+.PHONY : sdesign_swig_swig_doc
+
+# fast build rule for target.
+sdesign_swig_swig_doc/fast:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_doc.dir/build.make swig/CMakeFiles/sdesign_swig_swig_doc.dir/build
+.PHONY : sdesign_swig_swig_doc/fast
+
+# Convenience name for target.
+swig/CMakeFiles/_sdesign_swig_swig_tag.dir/rule:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_sdesign_swig_swig_tag.dir/rule
+.PHONY : swig/CMakeFiles/_sdesign_swig_swig_tag.dir/rule
+
+# Convenience name for target.
+_sdesign_swig_swig_tag: swig/CMakeFiles/_sdesign_swig_swig_tag.dir/rule
+
+.PHONY : _sdesign_swig_swig_tag
+
+# fast build rule for target.
+_sdesign_swig_swig_tag/fast:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build
+.PHONY : _sdesign_swig_swig_tag/fast
+
+# Convenience name for target.
+swig/CMakeFiles/_sdesign_swig_doc_tag.dir/rule:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_sdesign_swig_doc_tag.dir/rule
+.PHONY : swig/CMakeFiles/_sdesign_swig_doc_tag.dir/rule
+
+# Convenience name for target.
+_sdesign_swig_doc_tag: swig/CMakeFiles/_sdesign_swig_doc_tag.dir/rule
+
+.PHONY : _sdesign_swig_doc_tag
+
+# fast build rule for target.
+_sdesign_swig_doc_tag/fast:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build
+.PHONY : _sdesign_swig_doc_tag/fast
+
+# Convenience name for target.
+swig/CMakeFiles/_sdesign_swig.dir/rule:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/_sdesign_swig.dir/rule
+.PHONY : swig/CMakeFiles/_sdesign_swig.dir/rule
+
+# Convenience name for target.
+_sdesign_swig: swig/CMakeFiles/_sdesign_swig.dir/rule
+
+.PHONY : _sdesign_swig
+
+# fast build rule for target.
+_sdesign_swig/fast:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/build
+.PHONY : _sdesign_swig/fast
+
+# Convenience name for target.
+swig/CMakeFiles/pygen_swig_36d03.dir/rule:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f CMakeFiles/Makefile2 swig/CMakeFiles/pygen_swig_36d03.dir/rule
+.PHONY : swig/CMakeFiles/pygen_swig_36d03.dir/rule
+
+# Convenience name for target.
+pygen_swig_36d03: swig/CMakeFiles/pygen_swig_36d03.dir/rule
+
+.PHONY : pygen_swig_36d03
+
+# fast build rule for target.
+pygen_swig_36d03/fast:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/pygen_swig_36d03.dir/build.make swig/CMakeFiles/pygen_swig_36d03.dir/build
+.PHONY : pygen_swig_36d03/fast
+
+_sdesign_swig_doc_tag.o: _sdesign_swig_doc_tag.cpp.o
+
+.PHONY : _sdesign_swig_doc_tag.o
+
+# target to build an object file
+_sdesign_swig_doc_tag.cpp.o:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/_sdesign_swig_doc_tag.cpp.o
+.PHONY : _sdesign_swig_doc_tag.cpp.o
+
+_sdesign_swig_doc_tag.i: _sdesign_swig_doc_tag.cpp.i
+
+.PHONY : _sdesign_swig_doc_tag.i
+
+# target to preprocess a source file
+_sdesign_swig_doc_tag.cpp.i:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/_sdesign_swig_doc_tag.cpp.i
+.PHONY : _sdesign_swig_doc_tag.cpp.i
+
+_sdesign_swig_doc_tag.s: _sdesign_swig_doc_tag.cpp.s
+
+.PHONY : _sdesign_swig_doc_tag.s
+
+# target to generate assembly for a file
+_sdesign_swig_doc_tag.cpp.s:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/_sdesign_swig_doc_tag.cpp.s
+.PHONY : _sdesign_swig_doc_tag.cpp.s
+
+_sdesign_swig_swig_tag.o: _sdesign_swig_swig_tag.cpp.o
+
+.PHONY : _sdesign_swig_swig_tag.o
+
+# target to build an object file
+_sdesign_swig_swig_tag.cpp.o:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/_sdesign_swig_swig_tag.cpp.o
+.PHONY : _sdesign_swig_swig_tag.cpp.o
+
+_sdesign_swig_swig_tag.i: _sdesign_swig_swig_tag.cpp.i
+
+.PHONY : _sdesign_swig_swig_tag.i
+
+# target to preprocess a source file
+_sdesign_swig_swig_tag.cpp.i:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/_sdesign_swig_swig_tag.cpp.i
+.PHONY : _sdesign_swig_swig_tag.cpp.i
+
+_sdesign_swig_swig_tag.s: _sdesign_swig_swig_tag.cpp.s
+
+.PHONY : _sdesign_swig_swig_tag.s
+
+# target to generate assembly for a file
+_sdesign_swig_swig_tag.cpp.s:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/_sdesign_swig_swig_tag.cpp.s
+.PHONY : _sdesign_swig_swig_tag.cpp.s
+
+sdesign_swigPYTHON_wrap.o: sdesign_swigPYTHON_wrap.cxx.o
+
+.PHONY : sdesign_swigPYTHON_wrap.o
+
+# target to build an object file
+sdesign_swigPYTHON_wrap.cxx.o:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/sdesign_swigPYTHON_wrap.cxx.o
+.PHONY : sdesign_swigPYTHON_wrap.cxx.o
+
+sdesign_swigPYTHON_wrap.i: sdesign_swigPYTHON_wrap.cxx.i
+
+.PHONY : sdesign_swigPYTHON_wrap.i
+
+# target to preprocess a source file
+sdesign_swigPYTHON_wrap.cxx.i:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/sdesign_swigPYTHON_wrap.cxx.i
+.PHONY : sdesign_swigPYTHON_wrap.cxx.i
+
+sdesign_swigPYTHON_wrap.s: sdesign_swigPYTHON_wrap.cxx.s
+
+.PHONY : sdesign_swigPYTHON_wrap.s
+
+# target to generate assembly for a file
+sdesign_swigPYTHON_wrap.cxx.s:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/sdesign_swigPYTHON_wrap.cxx.s
+.PHONY : sdesign_swigPYTHON_wrap.cxx.s
+
+sdesign_swig_swig_2d0df.o: sdesign_swig_swig_2d0df.cpp.o
+
+.PHONY : sdesign_swig_swig_2d0df.o
+
+# target to build an object file
+sdesign_swig_swig_2d0df.cpp.o:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/sdesign_swig_swig_2d0df.cpp.o
+.PHONY : sdesign_swig_swig_2d0df.cpp.o
+
+sdesign_swig_swig_2d0df.i: sdesign_swig_swig_2d0df.cpp.i
+
+.PHONY : sdesign_swig_swig_2d0df.i
+
+# target to preprocess a source file
+sdesign_swig_swig_2d0df.cpp.i:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/sdesign_swig_swig_2d0df.cpp.i
+.PHONY : sdesign_swig_swig_2d0df.cpp.i
+
+sdesign_swig_swig_2d0df.s: sdesign_swig_swig_2d0df.cpp.s
+
+.PHONY : sdesign_swig_swig_2d0df.s
+
+# target to generate assembly for a file
+sdesign_swig_swig_2d0df.cpp.s:
+	cd /home/alarm/jbworkspace/gr-sdesign/build && $(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/sdesign_swig_swig_2d0df.cpp.s
+.PHONY : sdesign_swig_swig_2d0df.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,11 +371,29 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... install"
+	@echo "... sdesign_swig_swig_2d0df"
+	@echo "... sdesign_swig_swig_doc"
+	@echo "... _sdesign_swig_swig_tag"
+	@echo "... _sdesign_swig_doc_tag"
+	@echo "... _sdesign_swig"
 	@echo "... test"
+	@echo "... pygen_swig_36d03"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... _sdesign_swig_doc_tag.o"
+	@echo "... _sdesign_swig_doc_tag.i"
+	@echo "... _sdesign_swig_doc_tag.s"
+	@echo "... _sdesign_swig_swig_tag.o"
+	@echo "... _sdesign_swig_swig_tag.i"
+	@echo "... _sdesign_swig_swig_tag.s"
+	@echo "... sdesign_swigPYTHON_wrap.o"
+	@echo "... sdesign_swigPYTHON_wrap.i"
+	@echo "... sdesign_swigPYTHON_wrap.s"
+	@echo "... sdesign_swig_swig_2d0df.o"
+	@echo "... sdesign_swig_swig_2d0df.i"
+	@echo "... sdesign_swig_swig_2d0df.s"
 .PHONY : help
 
 

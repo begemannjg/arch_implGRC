@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/home/alarm/jbworkspace/gr-sdesign/include</compoundname>
+    <innerdir refid="dir_128c3015cb690b3983b2ff90e0a6b24a">/home/alarm/jbworkspace/gr-sdesign/include/sdesign</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/alarm/jbworkspace/gr-sdesign/include/"/>
+  </compounddef>
+</doxygen>

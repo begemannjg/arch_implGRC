@@ -4,15 +4,15 @@
   <key>sdesign_zybo_fft</key>
   <category>sdesign</category>
   <import>import sdesign</import>
-  <make>sdesign.zybo_fft()</make>
+ <make>sdesign.zybo_fft($IQdata)</make>
 		
-<!--		<param>
+		<param>
                 <name>IQdata</name>
 						<key>IQdata</key>
 						<value></value>
                         <type>float</type>
         </param>
-        -->
+        
         <param>
                 <name>FFT Size</name>
                 <key>$fft_size</key>
@@ -37,9 +37,11 @@
   <sink>
     <name>in</name>
     <type>float</type>
+    <nports>MAX_IN</nports>
   </sink>
   <source>
     <name>out</name>
     <type>float</type>
+    <nports>MAX_OUT</nports>
   </source>
 </block>

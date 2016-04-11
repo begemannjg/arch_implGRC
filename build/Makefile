@@ -205,6 +205,84 @@ test-sdesign/fast:
 .PHONY : test-sdesign/fast
 
 #=============================================================================
+# Target rules for targets named sdesign_swig_swig_2d0df
+
+# Build rule for target.
+sdesign_swig_swig_2d0df: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sdesign_swig_swig_2d0df
+.PHONY : sdesign_swig_swig_2d0df
+
+# fast build rule for target.
+sdesign_swig_swig_2d0df/fast:
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build.make swig/CMakeFiles/sdesign_swig_swig_2d0df.dir/build
+.PHONY : sdesign_swig_swig_2d0df/fast
+
+#=============================================================================
+# Target rules for targets named sdesign_swig_swig_doc
+
+# Build rule for target.
+sdesign_swig_swig_doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sdesign_swig_swig_doc
+.PHONY : sdesign_swig_swig_doc
+
+# fast build rule for target.
+sdesign_swig_swig_doc/fast:
+	$(MAKE) -f swig/CMakeFiles/sdesign_swig_swig_doc.dir/build.make swig/CMakeFiles/sdesign_swig_swig_doc.dir/build
+.PHONY : sdesign_swig_swig_doc/fast
+
+#=============================================================================
+# Target rules for targets named _sdesign_swig_swig_tag
+
+# Build rule for target.
+_sdesign_swig_swig_tag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sdesign_swig_swig_tag
+.PHONY : _sdesign_swig_swig_tag
+
+# fast build rule for target.
+_sdesign_swig_swig_tag/fast:
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_swig_tag.dir/build
+.PHONY : _sdesign_swig_swig_tag/fast
+
+#=============================================================================
+# Target rules for targets named _sdesign_swig_doc_tag
+
+# Build rule for target.
+_sdesign_swig_doc_tag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sdesign_swig_doc_tag
+.PHONY : _sdesign_swig_doc_tag
+
+# fast build rule for target.
+_sdesign_swig_doc_tag/fast:
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build.make swig/CMakeFiles/_sdesign_swig_doc_tag.dir/build
+.PHONY : _sdesign_swig_doc_tag/fast
+
+#=============================================================================
+# Target rules for targets named _sdesign_swig
+
+# Build rule for target.
+_sdesign_swig: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sdesign_swig
+.PHONY : _sdesign_swig
+
+# fast build rule for target.
+_sdesign_swig/fast:
+	$(MAKE) -f swig/CMakeFiles/_sdesign_swig.dir/build.make swig/CMakeFiles/_sdesign_swig.dir/build
+.PHONY : _sdesign_swig/fast
+
+#=============================================================================
+# Target rules for targets named pygen_swig_36d03
+
+# Build rule for target.
+pygen_swig_36d03: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_swig_36d03
+.PHONY : pygen_swig_36d03
+
+# fast build rule for target.
+pygen_swig_36d03/fast:
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_36d03.dir/build.make swig/CMakeFiles/pygen_swig_36d03.dir/build
+.PHONY : pygen_swig_36d03/fast
+
+#=============================================================================
 # Target rules for targets named pygen_python_e1eda
 
 # Build rule for target.
@@ -259,6 +337,12 @@ help:
 	@echo "... test"
 	@echo "... gnuradio-sdesign"
 	@echo "... test-sdesign"
+	@echo "... sdesign_swig_swig_2d0df"
+	@echo "... sdesign_swig_swig_doc"
+	@echo "... _sdesign_swig_swig_tag"
+	@echo "... _sdesign_swig_doc_tag"
+	@echo "... _sdesign_swig"
+	@echo "... pygen_swig_36d03"
 	@echo "... pygen_python_e1eda"
 	@echo "... pygen_apps_9a6dd"
 	@echo "... doxygen_target"

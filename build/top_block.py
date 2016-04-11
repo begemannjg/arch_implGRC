@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Thu Apr  7 02:54:30 2016
+# Generated: Sun Apr 10 18:23:40 2016
 ##################################################
 
 if __name__ == '__main__':
@@ -62,9 +62,9 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self.sdesign_zybo_fft_0 = sdesign.zybo_fft()
+        self.sdesign_zybo_fft_0 = sdesign.zybo_fft(1)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-        	1024, #size
+        	8192, #size
         	samp_rate, #samp_rate
         	"", #name
         	1 #number of inputs
@@ -109,7 +109,7 @@ class top_block(gr.top_block, Qt.QWidget):
         
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_win)
-        self.analog_sig_source_x_0 = analog.sig_source_f(samp_rate, analog.GR_COS_WAVE, 1000, 1, 0)
+        self.analog_sig_source_x_0 = analog.sig_source_f(samp_rate, analog.GR_COS_WAVE, 2000, 1, 0)
 
         ##################################################
         # Connections
@@ -128,8 +128,8 @@ class top_block(gr.top_block, Qt.QWidget):
 
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
-        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
         self.analog_sig_source_x_0.set_sampling_freq(self.samp_rate)
+        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
 
 
 def main(top_block_cls=top_block, options=None):
